@@ -26,10 +26,13 @@ task ExtractFASTQ {
         import shutil
         import glob
         import re
+    
         sra_file = "~{sra_file}"
         sample = "~{sample}"
         lane = "~{lane}"
         cpu = ~{cpu}
+    
+        # Run fasterq-dump
         call_args = [
             'fasterq-dump',
             '--split-files',
@@ -39,10 +42,20 @@ task ExtractFASTQ {
         ]
         print('Executing:', ' '.join(call_args))
         check_call(call_args)
-        # Prepare to rename files
+    
+        # Compress the generated .fastq files
         files = glob.glob('*.fastq')
-        # Extract suffixes and sort files
-        file_suffixes = {re.search('_(\d)\.fastq', f).group(1): f for f in files if re.search('_(\d)\.fastq', f)}
+        for file in files:
+            command = ['pigz', '-11', '-p', str(cpu), file]
+            subprocess.check_call(command)
+            print(f"Successfully compressed: {file}")
+    
+        # List of compressed files
+        compressed_files = glob.glob('*.fastq.gz')
+    
+        # Prepare to rename files
+        file_suffixes = {re.search('_(\d)\.fastq\.gz', f).group(1): f for f in compressed_files if re.search('_(\d)\.fastq\.gz', f)}
+    
         # Initialize variables to hold file paths
         i1_file, i2_file, r1_file, r2_file = None, None, None, None
         if len(file_suffixes) == 2:
@@ -57,28 +70,20 @@ task ExtractFASTQ {
             i2_file = file_suffixes['2']
             r1_file = file_suffixes['3']
             r2_file = file_suffixes['4']
-        # Define new filenames and list to compress
-        new_filenames = []
+    
+        # Define new filenames
         if i1_file:
-            i1_new_filename = f"{sample}_S1_{lane}_I1_001.fastq"
-            shutil.copy2(i1_file, i1_new_filename)
-            new_filenames.append(i1_new_filename)
+            i1_new_filename = f"{sample}_S1_{lane}_I1_001.fastq.gz"
+            shutil.move(i1_file, i1_new_filename)
         if i2_file:
-            i2_new_filename = f"{sample}_S1_{lane}_I2_001.fastq"
-            shutil.copy2(i2_file, i2_new_filename)
-            new_filenames.append(i2_new_filename)
+            i2_new_filename = f"{sample}_S1_{lane}_I2_001.fastq.gz"
+            shutil.move(i2_file, i2_new_filename)
         if r1_file:
-            r1_new_filename = f"{sample}_S1_{lane}_R1_001.fastq"
-            shutil.copy2(r1_file, r1_new_filename)
-            new_filenames.append(r1_new_filename)
+            r1_new_filename = f"{sample}_S1_{lane}_R1_001.fastq.gz"
+            shutil.move(r1_file, r1_new_filename)
         if r2_file:
-            r2_new_filename = f"{sample}_S1_{lane}_R2_001.fastq"
-            shutil.copy2(r2_file, r2_new_filename)
-            new_filenames.append(r2_new_filename)
-        for fastq in new_filenames:
-            command = ['pigz', '-p', str(cpu), fastq]
-            subprocess.check_call(command)
-            print(f"Successfully compressed: {fastq}")
+            r2_new_filename = f"{sample}_S1_{lane}_R2_001.fastq.gz"
+            shutil.move(r2_file, r2_new_filename)
         CODE
         ls -l
         ls ./
