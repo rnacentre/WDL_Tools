@@ -74,5 +74,5 @@ Update
 
 2024.5.14 ： Function added
   - For cellranger count WDL, updated naming conventions of h5ad files.
-  - `filtered_feature_bc_matrix.h5ad` convert to `~{sample}_filtered_feature_bc_matrix.h5ad`
+    - `filtered_feature_bc_matrix.h5ad` convert to `~{sample}_filtered_feature_bc_matrix.h5ad`
 
