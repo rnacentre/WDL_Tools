@@ -70,4 +70,7 @@ Update
 
 2024.5.11 ：Refining Code Logic
   - When handling the extraction of SRA files to fastq files, an issue with file attribution was encountered, making it difficult to accurately determine the correct naming of the extracted fastq files. Solution: The R1 data contains a large number of duplicate sequences composed of barcodes and UMIs. When performing high compression ratio file compression, the size of the R1 data file should be smaller than that of R2.
- - Simply reverse the order of the file compression and renaming logic.
+  - Simply reverse the order of the file compression and renaming logic.
+
+2024.5.14 ： Function added
+  - For cellranger count WDL, updated naming conventions of h5ad files.
