@@ -43,10 +43,10 @@ task ExtractFASTQ {
         print('Executing:', ' '.join(call_args))
         check_call(call_args)
     
-        # Compress the generated .fastq files
+        # Compress the generated .fastq file, important "-9" or "-11"
         files = glob.glob('*.fastq')
         for file in files:
-            command = ['pigz', '-11', '-p', str(cpu), file]
+            command = ['pigz', '-9', '-p', str(cpu), file]
             subprocess.check_call(command)
             print(f"Successfully compressed: {file}")
     
