@@ -5,6 +5,8 @@
 
 Here, we need a script, a program or an other things, to meet our need. 
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Courier+New&pause=1000&color=6B4DF7&multiline=true&random=false&width=435&height=80&lines=%E7%AB%99++%E5%9C%A8++%E5%B7%A8++%E4%BA%BA++%E7%9A%84++%E8%82%A9++%E8%86%80++;Stand+on+the+shoulders+of+giants)](https://git.io/typing-svg)
+
 What we need?
 -----------------------
 We have a platform built for fetch raw sequencing data to our system. Once the data is under our gover, we will get our pipline on woring. Given the complexity of the situation, our tools should be packaged as stand-alone toolkits, or they should take advantage of infrastructure that is readily available.
