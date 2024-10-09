@@ -26,7 +26,7 @@ task ExtractFASTQ {
         String sample_out = sample
     }
     runtime {
-        docker: "your_dockerhub_username/your_image_name:latest"
+        docker: "registry-vpc.miracle.ac.cn/gznl/ooaahhdocker/rust_base:1.0"
         cpu: cpu
         memory: memory
         disk: disk_space
