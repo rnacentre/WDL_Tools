@@ -57,24 +57,33 @@ Update
 2024.4.26 : Function added
   - For local fastq files, I had added `cellranger_singleFile.wdl`.
 
-2024.4.28 ： Bugs fix
+2024.4.28 : Bugs fix
   - For VDJ files(SRA), we have to use parameters: "`--split-file` combined with `--include-technologies`".
   - ps. For SpaceRanger, we need to use parameters `--split-3`. Therefore, in the case of 10X, we need to choose the appropriate workflow for the specific situation.
 
-2024.4.28 ：Added unplanned WDL files
+2024.4.28 : Added unplanned WDL files
   - 10X Cellranger multi WDL
 
-2024.5.4 ： Updated naming logic for files
+2024.5.4 : Updated naming logic for files
   - The extent of the impact "SRA > fastq.gz"
 
-2024.5.9 ： multi need to set NA as []
+2024.5.9 : multi need to set NA as []
   - Array[File] Cannot accept input with an empty string, use [] as insted.
 
-2024.5.11 ：Refining Code Logic
+2024.5.11 : Refining Code Logic
   - When handling the extraction of SRA files to fastq files, an issue with file attribution was encountered, making it difficult to accurately determine the correct naming of the extracted fastq files. Solution: The R1 data contains a large number of duplicate sequences composed of barcodes and UMIs. When performing high compression ratio file compression, the size of the R1 data file should be smaller than that of R2.
   - Simply reverse the order of the file compression and renaming logic.
 
-2024.5.14 ： Function added
+2024.5.14 : Function added
   - For cellranger count WDL, updated naming conventions of h5ad files.
     - `filtered_feature_bc_matrix.h5ad` convert to `~{sample}_filtered_feature_bc_matrix.h5ad`
+
+2024.10.9 : ATTENTON!
+All of those images' name should be replaced as followed.
+  - **registry-vpc.miracle.ac.cn/gznl/**
+    - registry-vpc.miracle.ac.cn/gznl/ooaahhdocker/ooaahhdocker/python_pigz:1.0
+    - registry-vpc.miracle.ac.cn/gznl/ooaahhdocker/py39_scanpy1-10-1
+    - registry-vpc.miracle.ac.cn/gznl/ooaahhdocker/starsolo2:3.0
+    - registry-vpc.miracle.ac.cn/gznl/ooaahhdocker/starsolo2:2.0
+    - registry-vpc.miracle.ac.cn/gznl/python:3.9.19-slim-bullseye
 
