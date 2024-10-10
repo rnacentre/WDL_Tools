@@ -11,22 +11,25 @@ task ExtractFASTQ {
         # Number of CPUs per job
         Int cpu
         String lane
+        # Split option for fasterq-dump
+        String split_option
     }
     command <<<
-        ./process_sra \
+        /root/rustSra2gz \
             --sample '~{sample}' \
             --lane '~{lane}' \
             --cpu ~{cpu} \
-            --sratoolkit_tar_gz '~{sratoolkit_tar_gz}' \
-            --sra_file '~{sra_file}'
+            --sratoolkit-tar-gz '~{sratoolkit_tar_gz}' \
+            --sra-file '~{sra_file}' \
+            --split-option='~{split_option}'
     >>>
-
+    
     output {
         Array[File] fastq_files = glob("./*.fastq.gz")
         String sample_out = sample
     }
     runtime {
-        docker: "registry-vpc.miracle.ac.cn/gznl/ooaahhdocker/rust_base:1.0"
+        docker: "registry-vpc.miracle.ac.cn/gznl/ooaahhdocker/rust_base:3.0"
         cpu: cpu
         memory: memory
         disk: disk_space
@@ -42,6 +45,8 @@ workflow ProcessSRA {
         String disk_space = "300 GB"
         Int cpu = 8
         String lane = "L001"
+        # Split option for fasterq-dump with default value
+        String split_option = "--split-files"
     }
     call ExtractFASTQ {
         input:
@@ -51,7 +56,8 @@ workflow ProcessSRA {
             cpu = cpu,
             memory = memory,
             disk_space = disk_space,
-            lane = lane
+            lane = lane,
+            split_option = split_option
     }
     output {
         Array[File] fastq_files = ExtractFASTQ.fastq_files
