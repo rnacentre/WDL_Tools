@@ -31,7 +31,9 @@ Update
 
 ### 2024.10.10 : let's have a try
 Try using rust as an encapsulation for the command part of the wdl, replacing python.
-The results are here: `_SRAtoFastqgz/2.0_rust`
+The results are here: `_SRAtoFastqgz/2.0_rust`. 
+
+I'm looking forward to this being a start, a start to be able to judge the type of vdj files (or any other files) quickly.
 
 ### 2024.10.9 : ATTENTON!
 All of those images' name should be replaced as followed.
