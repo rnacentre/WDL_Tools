@@ -1,0 +1,12 @@
+source "https://rubygems.org" # source "https://gems.ruby-china.com"
+
+gemspec
+
+gem "github-pages", group: :jekyll_plugins
+
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+
+gem 'faraday-retry'
+gem 'rubyzip', '~> 2.3', '< 3.0'
