@@ -1,35 +1,14 @@
-title: jekyll-rtd-theme
-description: Just another documentation theme compatible with GitHub Pages
+title: Your project name
+lang: en
+description: a catchy description for your project
 
-theme: null
-
-# debug:
-#   compress: true
-#   dist: false
-#   shortcodes: true
+remote_theme: rundocs/jekyll-rtd-theme
 
 readme_index:
   with_frontmatter: true
 
-plugins:
-  - jemoji
-  - jekyll-avatar
-  - jekyll-mentions
-
 exclude:
   - Makefile
   - CNAME
-  - LICENSE
-  - update.sh
   - Gemfile
   - Gemfile.lock
-  - requirements.txt
-  - node_modules
-  - package.json
-  - package-lock.json
-  - webpack.config.js
-  - jekyll-rtd-theme.gemspec
-
-
-baseurl: "https://github.com/rnacentre/WDL_Tools"  # 替换为你的仓库名称
-url: "https://OOAAHH.github.io"  # 替换为你的 GitHub 用户名
