@@ -1,8 +1,7 @@
 source "https://rubygems.org" # source "https://gems.ruby-china.com"
 
-gemspec
-
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 4.3"
+gem "jekyll-rtd-theme"  # 或者你选择的其他主题，如 jekyll-theme-primer
 
 gem 'csv'
 gem 'base64'
@@ -10,3 +9,12 @@ gem 'bigdecimal'
 
 gem 'faraday-retry'
 gem 'rubyzip', '~> 2.3', '< 3.0'
+
+group :jekyll_plugins do
+  gem "jemoji"
+  gem "jekyll-avatar"
+  gem "jekyll-mentions"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
+end
