@@ -106,18 +106,18 @@ All of those images' name should be replaced as followed.
   <source src="music/Retirement.mp3" type="audio/mp3">
 </audio>
 
-## 视频youtobe
+## 视频youtobe width="560" height="315" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidde
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/mgbjhzDndOY?si=n7WVtwtU2q5XKxft" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-## 视频bilibili
+## 视频bilibili position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden allowfullscreen=true
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113350260297623&bvid=BV1QvyHYeEuE&cid=26410156129&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 </div>
 
 
-## 视频bilibili2
+## 视频bilibili2 style="position: relative; padding: 30% 45% style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" rameborder="no" scrolling="no
 
 <div style="position: relative; padding: 30% 45%;">
 
