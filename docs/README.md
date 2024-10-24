@@ -104,6 +104,6 @@ All of those images' name should be replaced as followed.
 
 
 <audio controls>
-  <source src="/WDL_Tools//docs/music/Retirement.mp3" type="audio/mp3">
+  <source src="/WDL_Tools/docs/music/Retirement.mp3" type="audio/mp3">
 </audio>
 
