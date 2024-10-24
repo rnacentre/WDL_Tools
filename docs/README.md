@@ -101,8 +101,17 @@ All of those images' name should be replaced as followed.
   - Lower versions of cellranger(2.9.6) are unable to handle newer 10X scRNA-seq data.
   - Added a way to externally import the cellranger package
 
-
-<audio id="background-audio" autoplay muted>
+## 音频
+<audio controls>
   <source src="music/Retirement.mp3" type="audio/mp3">
 </audio>
 
+## 视频youtobe
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/mgbjhzDndOY?si=n7WVtwtU2q5XKxft" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+## 视频bilibili
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113350260297623&bvid=BV1QvyHYeEuE&cid=26410156129&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
