@@ -104,5 +104,10 @@ All of those images' name should be replaced as followed.
 
 
 <audio controls>
-  <source src="/docs/music/陈致逸,HOYO-MiX - 偷闲浮生 Adeptus' Retirement.mp3" type="audio/mp3">
+  <source src="/docs/music/Retirement.mp3" type="audio/mp3">
+</audio>
+
+
+<audio controls>
+  <source src="/music/Retirement.mp3" type="audio/mp3">
 </audio>
