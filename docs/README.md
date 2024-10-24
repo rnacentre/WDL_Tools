@@ -103,7 +103,26 @@ All of those images' name should be replaced as followed.
 
 
 
-<audio controls>
+<audio id="background-audio" autoplay muted>
   <source src="music/Retirement.mp3" type="audio/mp3">
 </audio>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var audio = document.getElementById("background-audio");
+  
+  // 尝试自动播放
+  var playPromise = audio.play();
+
+  if (playPromise !== undefined) {
+    playPromise.then(function() {
+      // 如果成功，去掉静音
+      audio.muted = false;
+    }).catch(function(error) {
+      // 如果失败，等待用户交互再播放
+      console.log("自动播放被阻止，需要用户交互");
+    });
+  }
+});
+</script>
 
