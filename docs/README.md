@@ -101,8 +101,6 @@ All of those images' name should be replaced as followed.
   - Added a way to externally import the cellranger package
 
 
-
-
 <audio id="background-audio" autoplay muted>
   <source src="music/Retirement.mp3" type="audio/mp3">
 </audio>
