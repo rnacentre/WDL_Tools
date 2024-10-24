@@ -110,19 +110,17 @@ All of those images' name should be replaced as followed.
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   var audio = document.getElementById("background-audio");
-  
-  // 尝试自动播放
-  var playPromise = audio.play();
+  audio.play();
 
-  if (playPromise !== undefined) {
-    playPromise.then(function() {
-      // 如果成功，去掉静音
-      audio.muted = false;
-    }).catch(function(error) {
-      // 如果失败，等待用户交互再播放
-      console.log("自动播放被阻止，需要用户交互");
-    });
+  // 当用户第一次与页面交互时，取消静音
+  function unmuteAudio() {
+    audio.muted = false;
+    document.removeEventListener('click', unmuteAudio);
+    document.removeEventListener('keydown', unmuteAudio);
   }
+
+  document.addEventListener('click', unmuteAudio);
+  document.addEventListener('keydown', unmuteAudio);
 });
 </script>
 
