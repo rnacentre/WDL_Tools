@@ -1,4 +1,8 @@
-source "https://gems.ruby-china.com" # gems.ruby-china.com rubygems.org
+#source "https://gems.ruby-china.com" # gems.ruby-china.com rubygems.org
+
+source 'https://rubygems.org'
+
+gem "jekyll", "~> 4.2"
 
 gem "jekyll-rtd-theme"
 
