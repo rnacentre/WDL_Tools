@@ -103,21 +103,28 @@ All of those images' name should be replaced as followed.
 
 
 
-<audio id="background-audio" autoplay muted>
+<audio id="background-audio" autoplay>
   <source src="music/Retirement.mp3" type="audio/mp3">
 </audio>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   var audio = document.getElementById("background-audio");
-  audio.play();
+  
+  // 尝试自动播放
+  var playPromise = audio.play();
 
-  // 当用户第一次与页面交互时，取消静音
-  function unmuteAudio() {
-    audio.muted = false;
-    document.removeEventListener('click', unmuteAudio);
-    document.removeEventListener('keydown', unmuteAudio);
+  if (playPromise !== undefined) {
+    playPromise.then(function() {
+      // 自动播放成功
+    }).catch(function(error) {
+      // 自动播放被阻止，需要用户交互
+      console.log("自动播放被阻止：", error);
+    });
   }
+});
+</script>
+
 
   document.addEventListener('click', unmuteAudio);
   document.addEventListener('keydown', unmuteAudio);
