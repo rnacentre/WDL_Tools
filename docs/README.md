@@ -104,6 +104,6 @@ All of those images' name should be replaced as followed.
 
 
 <audio controls>
-  <source src="https://github.com/rnacentre/WDL_Tools/blob/gh-pages/docs/music/Retirement.mp3" type="audio/mp3">
+  <source src="music/Retirement.mp3" type="audio/mp3">
 </audio>
 
