@@ -115,3 +115,14 @@ All of those images' name should be replaced as followed.
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113350260297623&bvid=BV1QvyHYeEuE&cid=26410156129&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 </div>
+
+
+## 视频bilibili2
+
+<div style="position: relative; padding: 30% 45%;">
+
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?aid=76053337&;bvid=BV11J41127DF&cid=130096191&page=1&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no">
+
+</iframe>
+
+</div>
