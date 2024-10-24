@@ -103,20 +103,7 @@ All of those images' name should be replaced as followed.
 
 
 
-<!-- 音频元素 -->
-<audio id="background-audio" muted>
+<audio id="background-audio" autoplay muted>
   <source src="music/Retirement.mp3" type="audio/mp3">
 </audio>
-
-<!-- 提示用户 -->
-<p><strong>提示：</strong>点击页面以播放背景音乐。</p>
-
-<!-- 脚本 -->
-<script>
-  document.addEventListener('click', function() {
-    var audio = document.getElementById('background-audio');
-    audio.muted = false; // 取消静音
-    audio.play(); // 播放音频
-  }, { once: true }); // 确保只执行一次
-</script>
 
