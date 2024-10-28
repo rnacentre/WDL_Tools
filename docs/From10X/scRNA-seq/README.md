@@ -58,7 +58,7 @@
 让我们回到BioOS平台，来到我们的cellrangerTest页面。试试看，找到页面上的"运行参数"选项卡>输入参数>"上传JSON文件"，将您的json文件上传。
 
 然后，点击页面上的绿色按钮"开始分析"，等待任务完成。
-![image](Pics/scRNA-seq_fig.1.png)
+![image](WDL_Tools/Pics/scRNA-seq_fig.1.png)
 
 ## 查看结果
 任务完成后，您可以在分析历史中看到您的任务。点击任务名称，进入任务详情页面。在任务详情页面，您可以查看/下载结果。
@@ -72,3 +72,39 @@
 
 Bravo! 到此为止，您已经掌握了BioOS的基本使用方法，并成功完成了10X Genomics scRNA-seq的分析。但请注意，这只是冰山一角，BioOS还有更多的强大功能等待您的探索。下面，让我们结合一个更复杂的例子，来展示BioOS的强大之处。
 
+
+<head>
+  <!-- 其他头部内容 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- 页面内容 -->
+  <pre><code class="language-json">
+{
+  "cellranger_count_workflow.chemistry": "auto",
+  "cellranger_count_workflow.cpu": 32,
+  "cellranger_count_workflow.disk_space": "300 GB",
+  "cellranger_count_workflow.fastq_file_paths": [
+    "<span class=\"highlight\">\"s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_I1_001.fastq.gz\"</span>",
+    "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_R1_001.fastq.gz",
+    "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_R2_001.fastq.gz"
+  ],
+  "cellranger_count_workflow.memory": "225 GB",
+  "cellranger_count_workflow.no_bam": "False",
+  "cellranger_count_workflow.reference_genome_tar_gz": "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/RAW/refdata-cellranger-GRCh38-3.0.0.tar.gz",
+  "cellranger_count_workflow.run_id": "<span class=\"highlight\">\"ERR8048237\"</span>",
+  "cellranger_count_workflow.sample": "<span class=\"highlight\">\"5891STDY8062334\"</span>",
+  "cellranger_count_workflow.secondary": "False"
+}
+  </code></pre>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+  <script>
+    // 自定义高亮样式
+    const highlights = document.querySelectorAll('.highlight');
+    highlights.forEach(element => {
+      element.style.backgroundColor = 'yellow';
+      element.style.fontWeight = 'bold';
+    });
+  </script>
+</body>
