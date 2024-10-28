@@ -59,12 +59,9 @@
 
 然后，点击页面上的绿色按钮"开始分析"，等待任务完成。
 
-<p align="center">
-  <img src="../../Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:auto; height:auto;"/>
-</p>
 
 <figure style="text-align: center;">
-  <img src="../../Pics/scRNA-seq_fig.1.png" alt="分析流程图" style="width:50%; height:auto;"/>
+  <img src="../../Pics/scRNA-seq_fig.1.png" alt="分析流程图" style="width:auto; height:auto;"/>
   <figcaption>注意右上角的绿色按钮，点击即可开始分析，并在3秒后自动跳转到分析历史界面。</figcaption>
 </figure>
 
