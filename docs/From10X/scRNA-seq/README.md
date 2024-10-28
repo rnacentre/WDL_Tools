@@ -33,13 +33,13 @@
 （markdown格式 引用 可折叠 或者 展开上标引用）注释：作为快速上手教程，我们不对具体的参数做出解释，具体的参数的解释请参考[10X Genomics官方文档](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/count)，在支持文档，我们也会对一些关键参数做出解释。
 
 这里我们给出了填写示例：
-- 注意加粗的部分
+- 注意这几个部分1️⃣`cellranger_count_workflow.fastq_file_paths` 2️⃣`cellranger_count_workflow.run_id` 3️⃣`cellranger_count_workflow.sample`
 ```json
 {
   "cellranger_count_workflow.chemistry": "auto",
   "cellranger_count_workflow.cpu": 32,
   "cellranger_count_workflow.disk_space": "300 GB",
-  "**cellranger_count_workflow.fastq_file_paths**": [
+  "cellranger_count_workflow.fastq_file_paths": [
     "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_I1_001.fastq.gz",
     "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_R1_001.fastq.gz",
     "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_R2_001.fastq.gz"
@@ -47,8 +47,8 @@
   "cellranger_count_workflow.memory": "225 GB",
   "cellranger_count_workflow.no_bam": "False",
   "cellranger_count_workflow.reference_genome_tar_gz": "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/RAW/refdata-cellranger-GRCh38-3.0.0.tar.gz",
-  "**cellranger_count_workflow.run_id**": "ERR8048237",
-  "**cellranger_count_workflow.sample**": "5891STDY8062334",
+  "cellranger_count_workflow.run_id": "ERR8048237",
+  "cellranger_count_workflow.sample": "5891STDY8062334",
   "cellranger_count_workflow.secondary": "False"
 }
 ```
