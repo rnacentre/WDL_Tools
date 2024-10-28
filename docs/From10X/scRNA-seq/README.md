@@ -34,7 +34,7 @@
 
 这里我们给出了填写示例：
 - 注意这几个部分1️⃣`cellranger_count_workflow.fastq_file_paths` 2️⃣`cellranger_count_workflow.run_id` 3️⃣`cellranger_count_workflow.sample`
-```json
+```json{.line-numbers}
 {
   "cellranger_count_workflow.chemistry": "auto",
   "cellranger_count_workflow.cpu": 32,
@@ -52,6 +52,19 @@
   "cellranger_count_workflow.secondary": "False"
 }
 ```
+
+# 示例代码块
+
+以下是一个带行号的 JSON 代码块示例：
+
+<pre class="line-numbers"><code class="language-json">
+{
+  "name": "1",
+  "type": "2",
+  "version": "3"
+}
+</code></pre>
+
 是的，就是这么简单。我们添加了文件路径，并填写了run_id和sample。这和您在本地计算的参数填写逻辑是一样的。我们已经准备好了，现在就提交任务吧！
 
 ## 提交任务
