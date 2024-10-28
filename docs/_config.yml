@@ -1,6 +1,13 @@
-title: Your project name
+title: WDL_tools的BioOS实践
 lang: en
 description: a catchy description for your project
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    line_numbers: true
+
 
 remote_theme: clearpathrobotics/jekyll-rtd-theme
 
@@ -11,3 +18,4 @@ exclude:
   - Makefile
   - Gemfile
   - Gemfile.lock
+
