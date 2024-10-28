@@ -54,13 +54,6 @@
 }
 ```
 
-<pre class="line-numbers"><code class="language-json">
-{
-  "key": "value",
-  "another_key": "another_value"
-}
-</code></pre>
-
 是的，就是这么简单。我们添加了文件路径，并填写了run_id和sample。这和您在本地计算的参数填写逻辑是一样的。我们已经准备好了，现在就提交任务吧！
 
 ## 提交任务
