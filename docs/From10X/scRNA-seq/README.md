@@ -83,6 +83,27 @@
   </figcaption>
 </figure>
 
+<figure style="
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #000; /* 边框颜色，可根据需要调整 */
+  border-radius: 10px; /* 圆角半径 */
+  padding: 10px; /* 内边距，确保内容不紧贴边框 */
+  background-color: #f9f9f9; /* 背景颜色，可选 */
+">
+  <img src="../../Pics/scRNA-seq_fig.1.png" alt="分析流程图" style="width:auto; height:auto;"/>
+  <figcaption style="
+    font-size: 0.9em; /* 字体大小，稍小于正文 */
+    font-weight: bold; /* 加粗 */
+    text-decoration: underline; /* 下划线 */
+    color: inherit; /* 颜色与父元素一致 */
+    margin-top: 8px; /* 图片与注释之间的间距 */
+  ">
+    注意右上角的绿色按钮，点击即可开始分析，并在3秒后自动跳转到分析历史界面。
+  </figcaption>
+</figure>
+
+
 
 ## 查看结果
 任务完成后，您可以在分析历史中看到您的任务。点击任务名称，进入任务详情页面。在任务详情页面，您可以查看/下载结果。
