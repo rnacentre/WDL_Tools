@@ -62,6 +62,14 @@
   <img src="../../../Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:50%; height:auto;"/>
 </p>
 
+<p align="center">
+  <img src="/WDL_Tools/Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:50%; height:auto;"/>
+</p>
+
+<p align="center">
+  <img src="/Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:50%; height:auto;"/>
+</p>
+
 
 ## 查看结果
 任务完成后，您可以在分析历史中看到您的任务。点击任务名称，进入任务详情页面。在任务详情页面，您可以查看/下载结果。
