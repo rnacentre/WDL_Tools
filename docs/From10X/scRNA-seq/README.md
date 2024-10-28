@@ -58,33 +58,33 @@
 让我们回到BioOS平台，来到我们的cellrangerTest页面。试试看，找到页面上的"运行参数"选项卡>输入参数>"上传JSON文件"，将您的json文件上传。
 
 然后，点击页面上的绿色按钮"开始分析"，等待任务完成。
-<p align="center">
-  <img src="../../Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" title="这还是测试" style="width80%; height:auto;"/>
-</p>
 
 <p align="center">
   <img src="../../Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:auto; height:auto;"/>
 </p>
 
-
+<figure style="text-align: center;">
+  <img src="../../Pics/scRNA-seq_fig.1.png" alt="分析流程图" style="width:50%; height:auto;"/>
+  <figcaption>注意右上角的绿色按钮，点击即可开始分析，并在3秒后自动跳转到分析历史界面。</figcaption>
+</figure>
 
 
 ## 查看结果
 任务完成后，您可以在分析历史中看到您的任务。点击任务名称，进入任务详情页面。在任务详情页面，您可以查看/下载结果。
 <p align="center">
-  <img src="../../Pics/scRNA-seq_fig.2.png" alt="现在这张图片展示了任务分析历史的详情，你可以在这里再次查阅输入和输出参数。当然你也可以在这里查看或下载结果" style="width:80%; height:auto;"/>
+  <img src="../../Pics/scRNA-seq_fig.2.png" alt="现在这张图片展示了任务分析历史的详情，你可以在这里再次查阅输入和输出参数。当然你也可以在这里查看或下载结果" style="width:auto; height:auto;"/>
 </p>
 点击"查看"，让我们来看看结果吧！所有的结果文件都会列出在这里，除了结果之外，也包括运行日志等文件，这取决于WDL文件的具体设置。
 <p align="center">
-  <img src="../../Pics/scRNA-seq_fig.3.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:80%; height:auto;"/>
+  <img src="../../Pics/scRNA-seq_fig.3.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:auto; height:auto;"/>
 </p>
 在这个示例中，我们需要的文件在"outs"文件夹中，让我们逐渐深入文件夹，找到我们需要的文件。
 <p align="center">
-  <img src="../../Pics/scRNA-seq_fig.4.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:80%; height:auto;"/>
+  <img src="../../Pics/scRNA-seq_fig.4.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:auto; height:auto;"/>
 </p>
 比如，我们希望直接拿到filtered_feature_bc_matrix.h5ad文件，点击"下载"，我们可以下载结果。
 <p align="center">
-  <img src="../../Pics/scRNA-seq_fig.5.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:80%; height:auto;"/>
+  <img src="../../Pics/scRNA-seq_fig.5.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:auto; height:auto;"/>
 </p>
 
 Bravo! 到此为止，您已经掌握了BioOS的基本使用方法，并成功完成了一次10X Genomics scRNA-seq的分析。但请注意，这只是冰山一角，BioOS还有更多的强大功能等待您的探索。下面，让我们结合一个更复杂的例子，来展示BioOS的强大之处。
