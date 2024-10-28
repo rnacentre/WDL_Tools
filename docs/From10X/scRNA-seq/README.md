@@ -34,7 +34,8 @@
 
 这里我们给出了填写示例：
 - 注意这几个部分1️⃣`cellranger_count_workflow.fastq_file_paths` 2️⃣`cellranger_count_workflow.run_id` 3️⃣`cellranger_count_workflow.sample`
-```json{.line-numbers}
+
+```json
 {
   "cellranger_count_workflow.chemistry": "auto",
   "cellranger_count_workflow.cpu": 32,
@@ -53,15 +54,10 @@
 }
 ```
 
-# 示例代码块
-
-以下是一个带行号的 JSON 代码块示例：
-
 <pre class="line-numbers"><code class="language-json">
 {
-  "name": "1",
-  "type": "2",
-  "version": "3"
+  "key": "value",
+  "another_key": "another_value"
 }
 </code></pre>
 
