@@ -59,15 +59,15 @@
 
 然后，点击页面上的绿色按钮"开始分析"，等待任务完成。
 <p align="center">
-  <img src="../../../Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:50%; height:auto;"/>
+  <img src="../../Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:50%; height:auto;"/>
 </p>
 
 <p align="center">
-  <img src="/WDL_Tools/Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:50%; height:auto;"/>
+  <img src="/docs/Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:50%; height:auto;"/>
 </p>
 
 <p align="center">
-  <img src="/Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:50%; height:auto;"/>
+  <img src="https://github.com/rnacentre/WDL_Tools/blob/gh-pages/WDL_Tools/docs/Pics/scRNA-seq_fig.1.png" alt="注意右上角的绿色按钮，点击这里即可开始分析，并在3s后自动跳转到分析历史界面" style="width:50%; height:auto;"/>
 </p>
 
 
