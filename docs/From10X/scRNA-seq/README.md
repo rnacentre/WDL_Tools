@@ -32,30 +32,27 @@
 
 # 示例代码块
 
-以下是一个带行号的 JSON 代码块示例：
+<div class="language-markdown highlighter-rouge">
+<div class="code-header"> <span data-label-text="Markdown"><i class="iconfont icon-code small"></i></span> <button class="button-copy" aria-label="copy" data-title-succeed="已复制！"><i class="iconfont icon-copy"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td>
+<td class="rouge-code"><pre><span class="p">```</span><span class="nl">c
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">```</span>
+{: highlight-lines="2" }
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
 
-<pre class="line-numbers"><code class="language-json">
-{
-  "cellranger_count_workflow": {
-    "chemistry": "auto",
-    "cpu": 32,
-    "disk_space": "300 GB",
-    "fastq_file_paths": [
-      "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_I1_001.fastq.gz",
-      "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_R1_001.fastq.gz",
-      "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_R2_001.fastq.gz"
-    ],
-    "memory": "225 GB",
-    "no_bam": "False",
-    "reference_genome_tar_gz": "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/RAW/refdata-cellranger-GRCh38-3.0.0.tar.gz",
-    "run_id": "ERR8048237",
-    "sample": "5891STDY8062334",
-    "secondary": "False"
-  }
-}
-</code></pre>
-
-请参考上面的 JSON 配置示例。
 
 看起来很复杂，但没关系。仔细观察，您会发现，这个json文件的部分参数已经自动设置好了，在大部分情况下，您只需要依次填写您自己的参数即可。
 
