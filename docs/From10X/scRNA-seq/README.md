@@ -28,7 +28,7 @@
   "cellranger_count_workflow.sample": null,
   "cellranger_count_workflow.secondary": "False"
 }
-{% endhighlight %}
+{% endhighlight %} \n
 
 请参考上面的 JSON 配置示例。
 
