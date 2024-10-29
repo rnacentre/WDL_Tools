@@ -30,30 +30,13 @@
 }
 ~~~
 
-# 示例代码块
-
-以下是一个带行号的 JSON 代码块示例：
-
-<pre class="line-numbers"><code class="language-json">
-{
-  "cellranger_count_workflow": {
-    "chemistry": "auto",
-    "cpu": 32,
-    "disk_space": "300 GB",
-    "fastq_file_paths": [
-      "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_I1_001.fastq.gz",
-      "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_R1_001.fastq.gz",
-      "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/ERR8048237/5891STDY8062334_S1_L001_R2_001.fastq.gz"
-    ],
-    "memory": "225 GB",
-    "no_bam": "False",
-    "reference_genome_tar_gz": "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/RAW/refdata-cellranger-GRCh38-3.0.0.tar.gz",
-    "run_id": "ERR8048237",
-    "sample": "5891STDY8062334",
-    "secondary": "False"
-  }
+```c
+int main(int argc, char* argv[]) {
+   return 0;
 }
-</code></pre>
+```
+{: highlight-lines="2" }
+
 
 请参考上面的 JSON 配置示例。
 
@@ -65,7 +48,7 @@
 这里我们给出了填写示例：
 注意这几个部分1️⃣`cellranger_count_workflow.fastq_file_paths` 2️⃣`cellranger_count_workflow.run_id` 3️⃣`cellranger_count_workflow.sample`
 
-```json
+~~~ json
 {
   "cellranger_count_workflow.chemistry": "auto",
   "cellranger_count_workflow.cpu": 32,
@@ -82,7 +65,7 @@
   "cellranger_count_workflow.sample": "5891STDY8062334",
   "cellranger_count_workflow.secondary": "False"
 }
-```
+~~~
 
 是的，就是这么简单。我们添加了文件路径，并填写了run_id和sample。这和您在本地计算的参数填写逻辑是一样的。我们已经准备好了，现在就提交任务吧！
 
