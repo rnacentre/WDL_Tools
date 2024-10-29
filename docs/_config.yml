@@ -9,12 +9,6 @@ remote_theme: OOAAHH/jekyll-rtd-theme_as_remote
 readme_index:
   with_frontmatter: true
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-
 exclude:
   - Makefile
   - Gemfile
