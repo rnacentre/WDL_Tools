@@ -2,25 +2,11 @@ title: WDL_tools的BioOS实践
 lang: en
 description: a catchy description for your project
 
-
 remote_theme: OOAAHH/jekyll-rtd-theme_as_remote
-
 
 readme_index:
   with_frontmatter: true
   
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    span:
-      line_numbers: true
-      start_line: 1
-    block:
-      line_numbers: true
-      start_line: 1
-      
 exclude:
   - Makefile
   - Gemfile
