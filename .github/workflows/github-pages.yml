@@ -1,0 +1,38 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - gh-pages  # 或您的默认分支名称，如 master
+  pull_request:
+    branches:
+      - gh-pages  # 或您的默认分支名称
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'  # 您可以根据需要指定 Ruby 版本
+          bundler-cache: true  # 缓存 gem 依赖项
+
+      - name: Install dependencies
+        run: |
+          bundle install
+
+      - name: Build the site with Jekyll
+        run: |
+          bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+
