@@ -6,12 +6,7 @@ source: `{{ page.path }}`
 
 
 
-```c
-int main(int argc, char* argv[]) {
-   return 0;
-}
-```
-{: highlight-lines="2" }
+
 
 
 # 示例代码块
