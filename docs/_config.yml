@@ -10,9 +10,9 @@ readme_index:
   with_frontmatter: true
 
 # 添加自定义 CSS
-include:
-  - /assets/css/prism.css
-  - /assets/js/prism.js
+#include:
+#  - /assets/css/prism.css
+#  - /assets/js/prism.js
 
 exclude:
   - Makefile
