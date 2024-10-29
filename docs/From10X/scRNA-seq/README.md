@@ -14,6 +14,7 @@
 让我们开始吧！
 
 ## 对于一个典型的10X Genomics scRNA-seq实验，我们推荐使用如下的json文件：
+
 ```json
 {
   "cellranger_count_workflow.chemistry": "auto",
@@ -30,28 +31,27 @@
 ```
 
 
-# 示例代码块
 
-<div class="language-markdown highlighter-rouge">
-<div class="code-header"> <span data-label-text="Markdown"><i class="iconfont icon-code small"></i></span> <button class="button-copy" aria-label="copy" data-title-succeed="已复制！"><i class="iconfont icon-copy"></i></button>
-</div>
-<div class="highlight"><code><table class="rouge-table"><tbody><tr>
-<td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td>
-<td class="rouge-code"><pre><span class="p">```</span><span class="nl">c
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
-   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">```</span>
-{: highlight-lines="2" }
-</pre></td>
-</tr></tbody></table></code></div>
-</div>
+```
+{
+  "cellranger_count_workflow.chemistry": "auto",
+  "cellranger_count_workflow.cpu": 32,
+  "cellranger_count_workflow.disk_space": "300 GB",
+  "cellranger_count_workflow.fastq_file_paths": null,
+  "cellranger_count_workflow.memory": "225 GB",
+  "cellranger_count_workflow.no_bam": "False",
+  "cellranger_count_workflow.reference_genome_tar_gz": "s3://bioos-wcnjupodeig44rr6t02v0/Example_10X_data/RAW/refdata-cellranger-GRCh38-3.0.0.tar.gz",
+  "cellranger_count_workflow.run_id": null,
+  "cellranger_count_workflow.sample": null,
+  "cellranger_count_workflow.secondary": "False"
+}
+```
+
+{% highlight html linenos %}
+  <p>This is some text in a paragraph.</p>
+{% endhighlight %}
+
+
 
 
 看起来很复杂，但没关系。仔细观察，您会发现，这个json文件的部分参数已经自动设置好了，在大部分情况下，您只需要依次填写您自己的参数即可。
