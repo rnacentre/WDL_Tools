@@ -14,6 +14,9 @@
 让我们开始吧！
 
 # 对于一个典型的10X Genomics scRNA-seq实验，我们推荐使用如下的json文件：
+~~~  javascript
+console.log('Helloworld!');
+~~~
 
 ```json
 {
@@ -36,7 +39,7 @@
 （markdown格式 引用 可折叠 或者 展开上标引用）注释：作为快速上手教程，我们不对具体的参数做出解释，具体的参数的解释请参考[10X Genomics官方文档](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/count)，在支持文档，我们也会对一些关键参数做出解释。
 
 这里我们给出了填写示例：
-- 注意这几个部分1️⃣`cellranger_count_workflow.fastq_file_paths` 2️⃣`cellranger_count_workflow.run_id` 3️⃣`cellranger_count_workflow.sample`
+注意这几个部分1️⃣`cellranger_count_workflow.fastq_file_paths` 2️⃣`cellranger_count_workflow.run_id` 3️⃣`cellranger_count_workflow.sample`
 
 ```json
 {
