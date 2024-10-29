@@ -57,11 +57,11 @@ title: "WDL_Tools的BioOS实践"
 }
 </style>
 
-# 示例代码块
+示例代码块
 
 以下是一个带行号的 JSON 代码块示例：
   
-  ```json
+```json
   {
     "cellranger_count_workflow": {
       "chemistry": "auto",
@@ -80,10 +80,9 @@ title: "WDL_Tools的BioOS实践"
       "secondary": "False"
     }
   }
-  ```
+```
 
 ~~~
 
-请参考上面的 JSON 配置示例。
----
+
 # 请参考上面的 JSON 配置示例。
