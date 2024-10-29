@@ -1,24 +1,36 @@
-# file1
 
-source: `{{ page.path }}`
+**注意事项：**
+- 确保在代码块前后至少有一个空行或使用水平分隔符（如 `---` 或 `***`），以防止解析器将下方文本包含在代码块中。
+- 使用三反引号（```）包裹代码，并在第一行反引号后指定代码语言（如 `json`）。
 
+## 2. 在每个 Markdown 文件中添加内联样式
 
+在每个需要显示代码块行号的 Markdown 文件顶部或适当的位置，添加一个 `<style>` 块，定义必要的 CSS 样式。这样可以确保每个文件独立地应用这些样式，而无需依赖外部 CSS 文件。
+
+### 示例：
+
+```markdown
+---
+title: "WDL_Tools的BioOS实践"
+---
 
 <style>
 /* Rouge 行号样式 */
-table.highlight {
+.highlight table {
   width: 100%;
+  border-spacing: 0;
 }
 
-td.rouge-gutter {
+.highlight td.rouge-gutter {
   width: 2.5em;
   padding-right: 0.5em;
   text-align: right;
   vertical-align: top;
   color: #999;
+  user-select: none;
 }
 
-td.rouge-code {
+.highlight td.rouge-code {
   width: 100%;
 }
 
@@ -27,11 +39,35 @@ td.rouge-code {
   padding: 0;
   background: none;
 }
+
+/* 自定义行号样式 */
+.highlight pre {
+  position: relative;
+  padding-left: 3em; /* 为行号留出空间 */
+  counter-reset: linenumber;
+}
+
+.highlight pre code {
+  display: block;
+  counter-reset: linenumber;
+}
+
+.highlight pre code .line {
+  display: block;
+  counter-increment: linenumber;
+  position: relative;
+  padding-left: 1em;
+}
+
+.highlight pre code .line::before {
+  content: counter(linenumber);
+  position: absolute;
+  left: -1em;
+  width: 1em;
+  text-align: right;
+  color: #999;
+}
 </style>
-
-
-
-
 
 # 示例代码块
 
@@ -57,5 +93,6 @@ td.rouge-code {
   }
 }
 ```
-
+请参考上面的 JSON 配置示例。
+---
 请参考上面的 JSON 配置示例。
