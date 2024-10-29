@@ -8,8 +8,15 @@ remote_theme: clearpathrobotics/jekyll-rtd-theme
 readme_index:
   with_frontmatter: true
 
+# 添加自定义 CSS
+include:
+  - assets/css/custom.css
+  - assets/js/custom.js
+
 exclude:
   - Makefile
   - Gemfile
   - Gemfile.lock
+  - node_modules # new
+  - vendor # new
 
