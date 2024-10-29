@@ -9,10 +9,11 @@ remote_theme: OOAAHH/jekyll-rtd-theme_as_remote
 readme_index:
   with_frontmatter: true
 
-# 添加自定义 CSS
-#include:
-#  - /assets/css/prism.css
-#  - /assets/js/prism.js
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 
 exclude:
   - Makefile
