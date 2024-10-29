@@ -8,11 +8,24 @@ remote_theme: OOAAHH/jekyll-rtd-theme_as_remote
 
 readme_index:
   with_frontmatter: true
-
+  
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+      
 exclude:
   - Makefile
   - Gemfile
   - Gemfile.lock
-  - node_modules # new
-  - vendor # new
+
+
+
 
