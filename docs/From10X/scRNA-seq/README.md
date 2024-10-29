@@ -14,7 +14,7 @@
 让我们开始吧！
 
 ## 对于一个典型的10X Genomics scRNA-seq实验，我们推荐使用如下的json文件：
-<pre class="line-numbers"><code class="language-json">
+```json
 {
   "cellranger_count_workflow.chemistry": "auto",
   "cellranger_count_workflow.cpu": 32,
@@ -27,7 +27,7 @@
   "cellranger_count_workflow.sample": null,
   "cellranger_count_workflow.secondary": "False"
 }
-</code></pre>
+```
 看起来很复杂，但没关系。仔细观察，您会发现，这个json文件的部分参数已经自动设置好了，在大部分情况下，您只需要依次填写您自己的参数即可。
 
 （markdown格式 引用 可折叠 或者 展开上标引用）注释：作为快速上手教程，我们不对具体的参数做出解释，具体的参数的解释请参考[10X Genomics官方文档](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/count)，在支持文档，我们也会对一些关键参数做出解释。
