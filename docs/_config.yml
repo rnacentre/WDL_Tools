@@ -10,8 +10,8 @@ readme_index:
 
 # 添加自定义 CSS
 include:
-  - assets/css/custom.css
-  - assets/js/custom.js
+  - assets/css/prism.css
+  - assets/js/prism.js
 
 exclude:
   - Makefile
