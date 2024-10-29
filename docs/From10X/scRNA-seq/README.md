@@ -30,5 +30,10 @@
 }
 ~~~
 
+{% highlight html linenos %}
+  <p>This is some text in a paragraph.</p>
+{% endhighlight %}
+
+
 
 
