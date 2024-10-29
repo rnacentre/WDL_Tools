@@ -4,25 +4,7 @@ source: `{{ page.path }}`
 
 # 示例代码块
 
-以下是一个带行号的 JSON 代码块示例：
-1
 
-<pre class="highlight"><code class="language-json">
-
-{% highlight html linenos %}
-  <p>This is some text in a paragraph.</p>
-{% endhighlight %}
-
-</code></pre>
-
-2
-
-{% highlight html linenos %}
-  <p>This is some text in a paragraph.</p>
-{% endhighlight %}
-
-
-3
 
 ```c
 int main(int argc, char* argv[]) {
