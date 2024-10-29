@@ -25,10 +25,12 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd docs
           bundle install
 
       - name: Build the site with Jekyll
         run: |
+          cd docs
           bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
