@@ -2,8 +2,32 @@
 
 source: `{{ page.path }}`
 
-# 示例代码块
 
+
+<style>
+/* Rouge 行号样式 */
+table.highlight {
+  width: 100%;
+}
+
+td.rouge-gutter {
+  width: 2.5em;
+  padding-right: 0.5em;
+  text-align: right;
+  vertical-align: top;
+  color: #999;
+}
+
+td.rouge-code {
+  width: 100%;
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+</style>
 
 
 
