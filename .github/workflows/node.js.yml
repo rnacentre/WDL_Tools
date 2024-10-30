@@ -3,7 +3,7 @@ name: docs
 on:
   # 每当 push 到 main 分支时触发部署
   push:
-    branches: vue_press
+    branches: main
   # 手动触发部署
   workflow_dispatch:
 
@@ -43,7 +43,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v4
         with:
           # 部署到 gh-pages 分支
-          target_branch: vue_press
+          target_branch: main
           # 部署目录为 VuePress 的默认输出目录
           build_dir: /press/docs/.vuepress/dist
         env:
