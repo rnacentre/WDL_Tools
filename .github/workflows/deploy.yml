@@ -29,14 +29,18 @@ jobs:
       # 安装依赖
       # Install dependencies
       - name: Install Dependencies
-        run: npm ci
+        run: |
+          cd docs
+          npm ci
 
 
 
       # 运行构建脚本
       # Run the build script
       - name: Build VuePress site
-        run: npm run docs:build
+        run: |
+          cd docs
+          npm run docs:build
 
 
       # 查看 workflow 的文档来获取更多信息
@@ -45,7 +49,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v4
         with:
           # 部署到 gh-pages 分支
-          target_branch: vue_press
+          target_branch: main
           # 部署目录为 VuePress 的默认输出目录
           build_dir: docs/.vuepress/dist
         env:
