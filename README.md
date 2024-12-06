@@ -28,6 +28,21 @@ What we have,now
 
 Update
 -----------------------
+### 2024.12.06 ：mystery bugs
+When we use `Array[File] renamed_fastq_files = glob("./*_L001_*_001.fastq.gz")` to collect files, it may counter bugs sometimes. As follow message shows,
+```plain
+workflow run failed: [{"causedBy":[{"causedBy":[{"causedBy":[],"message":"Could not process output, file not found: s3://bioos-wco5n1l5eig44l11sp2sg/analysis/sct8krpqh27m1e54qbrtg/changethename/881c2420-b9fa-41db-8bc4-00f82cf150e8/call-rename_fastq_files_based_on_size/execution/glob-cb37589bd0ab1a6cce9ae3996de17d12/PRJNA543474_dlst000580_SRR9079176_S1_L001_R1_001.fastq.gz*"},{"causedBy":[],"message":"Could not process output, file not found: s3://bioos-wco5n1l5eig44l11sp2sg/analysis/sct8krpqh27m1e54qbrtg/changethename/881c2420-b9fa-41db-8bc4-00f82cf150e8/call-rename_fastq_files_based_on_size/execution/glob-cb37589bd0ab1a6cce9ae3996de17d12/PRJNA543474_dlst000580_SRR9079176_S1_L001_R2_001.fastq.gz*"}],"message":""}],"message":"Workflow failed"}]
+```
+It's weird, but I cannot find out why. Then I choose to let `glob` be replaced by `select_all`, as follow code shows,
+```
+output{
+    File r1 = "${sample_name}_S1_L001_R1_001.fastq.gz"
+    File r2 = "${sample_name}_S1_L001_R2_001.fastq.gz"
+    File? i1 = "${sample_name}_S1_L001_I1_001.fastq.gz"
+    Array[File] renamed_fastq_files = select_all([i1, r1, r2])
+}
+```
+
 
 ### 2024.10.10 : let's have a try
 Try using rust as an encapsulation for the command part of the wdl, replacing python.
