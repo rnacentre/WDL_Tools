@@ -28,6 +28,9 @@ What we have,now
 
 Update
 -----------------------
+### 2024.12.10 ：mystery bugs phase II
+εὕρηκα! The reason for this bug is the file permissions. DRS links and S3 links differ in file permissions. When we use the -F parameter, this difference causes the glob command to add an * at the end of the file names. Then I had subbmitted this issues to administrator, and they said it will be fixed in the next version.
+
 ### 2024.12.06 ：mystery bugs
 When we use `Array[File] renamed_fastq_files = glob("./*_L001_*_001.fastq.gz")` to collect files, it may counter bugs sometimes. As follow message shows,
 ```plain
